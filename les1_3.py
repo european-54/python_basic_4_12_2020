@@ -17,7 +17,8 @@ variable5 = user_number2
 
 print(variable1, variable2, variable3, variable4, variable5)
 
-
+"""
+Наработка по заданию № 2
 user_time = input('Введите произвольное количество секунд:\n>>>')
 
 if user_time.isdigit():
@@ -33,3 +34,4 @@ t = '22.3'
 float(t)
 
 print(variable7)
+"""
