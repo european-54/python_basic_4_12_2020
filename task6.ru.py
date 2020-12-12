@@ -22,4 +22,56 @@
 “ед”: [“шт.”]
 }
 """
+product_template = {
+    'название' : ("имя товара", str)
+    'цена' : ("стоимость товара", int)
+    'количество' : ("количество товара", int)
+    'ед' : ("Единицы измерения (шт, кг и тд)", str)
+}
+
+next_enter = True
+
+auto_inc = 1   #  инкремент - это количество на которое увеличивается
+products_list = []
+
+while next_enter:
+    #  словарь в который будем заполнять атрибуты товара
+    product = {}
+    #  заполняем товар по шаблону
+    for key, value in product_template.items():
+    #  цикл while True используем для того, чтобы переспросить, если будет неверный ввод
+    while True:
+        user_value = input(f'{value[0]}\n')
+        try:
+            user_value = value[1](user_value)   #  int(user_value)
+        except ValueError as e:
+            print(f"{e}\nНеверное значение данных")
+            continue
+            product[key] = user_value
+            break
+    products_list.append((auto_inc, product))
+    auto_inc += 1
+
+
+    #  Проверяем, надо-ли ещё вводить товар
+    while True:
+        next_add = input("Добавить ещё продукт? Да/Нет\n")
+        if next_add.lower() in ('да', 'нет'):
+            next_enter = next_add.lower() == 'да'
+            break
+        else:
+            print('Неверный ввод, повторите')
+
+print(product_list)
+
+products_analytics = {}
+
+#  Собираем словарь аналитики
+for key in product_template:
+    result = []
+    for itm in products_list:
+        result.append(itm[1][key])
+    products_analytics[ket] = result
+
+print(products_analytics)
 
