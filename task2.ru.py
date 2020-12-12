@@ -3,14 +3,12 @@
 элементы с индексами 0 и 1, 2 и 3 и т.д. При нечетном количестве элементов последний сохранить на
 своем месте. Для заполнения списка элементов необходимо использовать функцию input().
 """
-some_txt = input('Введите злементы списка через пробел между элементами, не более 7-ми элементов:\n>>>')
+user_answer = input('Введите злементы списка через запятую между элементами:\n>>>')
 print('Это ваш список ?')
+user_list = user_answer.split(',')
 
-a = some_txt[0]
-b = some_txt[1]
-c = some_txt[2]
-d = some_txt[3]
-e = some_txt[4]
-g = some_txt[5]
-h = some_txt[6]
-
+idx = 0
+while idx < len(user_list[:-1]):
+    user_list[idx], user_list[idx+1] = user_list[idx+1], user_list[idx]
+    idx +=2
+print(user_list)
