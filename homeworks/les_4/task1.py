@@ -9,8 +9,7 @@ def sal():
         salary = int(input('Ставка в у.е. '))
         bonus = int(input('Премия в у.е. '))
         res = time * salary + bonus
-        print(f'заработная плата сотрудника  {res}')
+        print(f'заработная плата сотрудника {res}')
     except ValueError:
         return print('Not a number')
 sal()
-
