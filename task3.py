@@ -3,7 +3,7 @@
 Определить, кто из сотрудников имеет оклад менее 20 тыс., вывести фамилии этих сотрудников. Выполнить подсчет
 средней величины дохода сотрудников.
 """
-with open('rev.txt', 'r') as my_file:
+with open('rev.txt', 'r', encoding='utf-8') as my_file:
     rev = []
     poor = []
     my_list = my_file.read().split('\n')

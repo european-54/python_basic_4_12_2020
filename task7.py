@@ -19,7 +19,7 @@ pr = {}
 prof = 0
 prof_aver = 0
 i = 0
-with open('file_7.txt', 'r') as file:
+with open('file_7.txt', 'r', encoding='utf-8') as file:
     for line in file:
         name, firm, earning, damage = line.split()
         profit[name] = int(earning) - int(damage)
@@ -35,7 +35,7 @@ with open('file_7.txt', 'r') as file:
     profit.update(pr)
     print(f'Прибыль каждой компании - {profit}')
 
-with open('file_7.json', 'w') as write_js:
+with open('file_7.json', 'w', encoding='utf-8') as write_js:
     json.dump(profit, write_js)
 
     js_str = json.dumps(profit)
