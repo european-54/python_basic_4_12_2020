@@ -2,23 +2,23 @@
 2. Создать текстовый файл (не программно), сохранить в нем несколько строк, выполнить подсчет количества строк,
 количества слов в каждой строке.
 """
-my_file = open('file_2.txt', 'r')
+my_file = open('file_2.txt', 'r', encoding='utf-8')
 content = my_file.read()
 
 print(f'Содержимое файла: \n {content}')
 
-my_file = open('file_2.txt', 'r')
+my_file = open('file_2.txt', 'r', encoding='utf-8')
 content = my_file.readlines()
 
 print(f'Количество строк в файле - {len(content)}')
 
-my_file = open('file_2.txt', 'r')
+my_file = open('file_2.txt', 'r', encoding='utf-8')
 content = my_file.readlines()
 for i in range(len(content)):
 
     print(f'Количество символов {i + 1} - ой(ей) строки {len(content[i])}')
 
-my_file = open('file_2.txt', 'r')
+my_file = open('file_2.txt', 'r', encoding='utf-8')
 content = my_file.read()
 content = content.split()
 
