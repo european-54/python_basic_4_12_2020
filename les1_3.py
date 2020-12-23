@@ -17,21 +17,3 @@ variable5 = user_number2
 
 print(variable1, variable2, variable3, variable4, variable5)
 
-"""
-Наработка по заданию № 2
-user_time = input('Введите произвольное количество секунд:\n>>>')
-
-if user_time.isdigit():
-    user_time = int(user_time)
-else:
-    print('Ошибка ввода времени, вводите число')
-    exit()
-
-variable6 = user_time
-variable7 = variable6 / 60
-
-t = '22.3'
-float(t)
-
-print(variable7)
-"""
