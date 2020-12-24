@@ -77,7 +77,7 @@ class PoliceCar(Car):
 
 maserati = SportCar(135, 'Orange', 'Maserati', False)
 cooper = TownCar(55, 'Red', 'Cooper', False)
-lada = WorkCar(45, 'Gray', 'Lada', True)
+lada = WorkCar(45, 'Gray', 'Lada', False)
 peugeot = PoliceCar(150, 'Blue',  'Peugeot', True)
 print(lada.turn_left())
 print(f'When {cooper.turn_right()}, then {maserati.stop()}')
