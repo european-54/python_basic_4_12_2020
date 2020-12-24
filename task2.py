@@ -19,10 +19,11 @@ class Road:
 
 
 class MassCount(Road):
-    def __init__(self, _length, _width, density):
+    def __init__(self, _length, _width, density, thickness):
         super().__init__(_length, _width)
         self.density = density
+        self.thickness = thickness
 
 
-r = MassCount(25, 50000, 125)
+r = MassCount(25, 50000, 25, 5)
 print(r.mass())
