@@ -13,7 +13,7 @@ from time import sleep
 class TrafficLight:
     __color = ['Красный', 'Желтый', 'Зеленый']
 
-    def switch(self):
+    def running(self):
         i = 0
         while i < 3:
             print(f'Светофор переключается \n<<<'
@@ -28,4 +28,4 @@ class TrafficLight:
 
 
 TrafficLight = TrafficLight()
-TrafficLight.switch()
+TrafficLight.running()
