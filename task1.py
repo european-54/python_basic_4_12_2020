@@ -16,10 +16,3 @@ def my_div(a, b):
 
 
 print((my_div(a, b)))
-
-
-
-
-
-#  def exe_1_use():
-#   print(exe_1((int(input('Enter first number: '))), (int(input('Enter second number: ')))))

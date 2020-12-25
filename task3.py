@@ -3,3 +3,12 @@
 наибольших двух аргументов.
 """
 
+
+def my_func(var_1, var_2, var_3):
+    var_1 = 7
+    var_2 = 12
+    var_3 = 11
+    return 'var_1' + 'var_2' + 'var_3'
+
+
+print(my_func('var_1', 'var_2', 'var_3'))
