@@ -15,4 +15,4 @@ def my_div(a, b):
         return 'No value'
 
 
-print((my_div(a, b)))
+print(my_div(a, b))
