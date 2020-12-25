@@ -8,6 +8,7 @@
 """
 x = float(input('Введите положительное число х :'))
 y = int(input('Введите целое отрицательное число у :'))
+b = abs(y)
 
 
 def my_func(x, y):
@@ -15,3 +16,10 @@ def my_func(x, y):
 
 
 print(my_func(x, y))
+
+
+def my_func_1(x, b):
+    return 1 / x ** b
+
+
+print(my_func_1(x, b))
