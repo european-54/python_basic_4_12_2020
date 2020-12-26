@@ -30,7 +30,7 @@ class Cell:
         self.quantity = int(quantity)
 
     def make_order(self, cells_in_row):
-        row = ''
+        row = ' '
         for i in range(int(self.quantity / cells_in_row)):
             row += f'{"*" * cells_in_row} \\n'
             row += f'{"*" * (self.quantity % cells_in_row)}'
@@ -57,6 +57,6 @@ cells2 = Cell(17)
 print(cells1)
 print(cells1 + cells2)
 print(cells2 - cells1)
-print(cells2.make_order(3))
-print(cells1.make_order(16))
+print(cells2.make_order(15))
+print(cells1.make_order(5))
 print(cells2 / cells1)
