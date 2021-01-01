@@ -12,3 +12,31 @@
 При этом работа скрипта не должна завершаться.
 """
 
+
+class Error:
+    def __init__(self, *args):
+        self.my_list = []
+
+    def my_input(self):
+        # self.my_list = [int(i) for i in input('Введите значения через пробел ').split()]
+        # val = int(input('Вводите значения и нажимайте Enter - '))
+        # self.my_list.append(val)
+        while True:
+            try:
+                val = int(input('Введите значения и нажимайте Enter - '))
+                self.my_list.append(val)
+                print(f'Текущий список - {self.my_list} \n ')
+            except:
+                print(f"Недопустимое значение - строка или булево")
+                f_or_n = input(f'Попробовать еще раз? F/N ')
+
+                if f_or_n == 'F' or f_or_n == 'f':
+                    print(try_except.my_input())
+                elif f_or_n == 'N' or f_or_n == 'n':
+                    return f'Вы вышли'
+                else:
+                    return f'Вы вышли'
+
+
+try_except = Error(1)
+print(try_except.my_input())
